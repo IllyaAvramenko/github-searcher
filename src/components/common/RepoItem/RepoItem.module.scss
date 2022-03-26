@@ -1,0 +1,29 @@
+.repo {
+   width: 100%;
+   transition: .2s;
+
+   &:hover {
+      background-color: #6bd2ff;
+
+      p {
+         color: white;
+      }
+   }
+
+   &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      text-decoration: none;
+      width: 100%;
+
+      padding: 0.5rem 0.8rem;
+   }
+
+   p {
+      color: gray;
+      transition: .2s;
+      margin-block-start: 0.3em;
+      margin-block-end: 0.3em;
+   }
+}

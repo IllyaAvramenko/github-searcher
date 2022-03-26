@@ -1,0 +1,54 @@
+.user {
+   width: 100%;
+   transition: .2s;
+   &:hover {
+      background-color: #6bd2ff;
+
+      p {
+         color: white;
+      }
+   }
+
+   &__link {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      text-decoration: none;
+      width: 100%;
+      padding: 0.5rem 0.8rem; 
+   }
+   
+   &__avatar {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      width: 15%;
+      overflow: hidden;
+      img {
+         width: 50px;
+         height: 50px;
+         border-radius: 50%;
+      }
+   }
+
+   &__name {
+      width: 65%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+   }
+
+   &__repo {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 20%;
+   }
+
+   p {
+      color: gray;
+      transition: .2s;
+   }
+}

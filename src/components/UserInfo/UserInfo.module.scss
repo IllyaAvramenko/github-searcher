@@ -1,0 +1,70 @@
+.userInfo {
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 35% calc(100% - 35%);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+
+   width: 100%;
+   height: 100%;
+
+   .info {
+      display: grid;
+      grid-template-areas: 
+            "a a b b"
+            "a a b b"
+            "c c c c";
+
+      &__avatar {
+         grid-area: a;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+
+      }
+
+      &__data {
+         grid-area: b;
+         p {
+            margin-block-start: 0.7em;
+            margin-block-end: 0.7em;
+         }
+      }
+
+      &__bio {
+         grid-area: c;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         p {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: pre;
+            max-width: 520px;
+            margin: 0;
+         }
+      }
+   }
+
+   .repos {
+      &__wrapper {
+         display: grid;
+         grid-template-columns: 1fr;
+         grid-template-rows: 70px calc(100% - 70px);
+         grid-column-gap: 0px;
+         grid-row-gap: 0px;
+         max-height: 100%;
+      }
+   }
+}
+
+.repo {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   width: 100%;
+
+   padding: 0rem 0.7rem;
+   margin: 0.4rem 0rem;
+}
